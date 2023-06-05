@@ -7,6 +7,21 @@ form {
   font-size: 20px;
   background-color: #354f52;
 }
+span {
+  padding: 5px;
+  font-size: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #cad2c5;
+}
+.span {
+  margin-bottom: 40px;
+  transition-duration: 2s;
+}
+.span:hover {
+  transform: rotate(360deg);
+  transition-duration: 3s;
+}
 body {
   background-color: #354f52;
 }

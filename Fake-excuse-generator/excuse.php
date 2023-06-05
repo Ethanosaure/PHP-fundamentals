@@ -8,6 +8,9 @@
 </head>
 <body>
     <form>
+        <div class="span">
+        <span>Excuse Generator</span>
+</div>
     <label for="name" >What is your child's name ?</label><br>
     <input type="text" name="name" id="name"><br>
     <label for="gender">What are you?</label><br>
