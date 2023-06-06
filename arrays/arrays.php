@@ -24,7 +24,7 @@ $me = array('firstname' => 'Ethan',
 <br>
 <!-- exercices 1 -->
 <?php
-$me['hobbies'] = ['sports', 'coding', 'video games', 'playing with my dog', 'see my friends'];
+$me['hobbies'] = ['sports', 'coding', 'video games','sleep', 'playing with my dog', 'see my friends'];
 $mother = array('firstname' => 'Sabine',
 'lastname' => 'Sabine',
 'age' => 55,
@@ -39,10 +39,31 @@ $me['mother'] = $mother;
 // print_r($me);
 // echo '</pre>';
 
-$print_me = count($me['hobbies']);
-$print_mother = count($mother['hobbies']);
-$total = $print_me + $print_mother;
-print_r("$total total hobbies");
+// $print_me = count($me['hobbies']);
+// $print_mother = count($mother['hobbies']);
+// $total = $print_me + $print_mother;
+// print_r("$total total hobbies");
+$me["hobbies"] []= 'Taxidermy';
+$arraydiff = array_merge($mother['hobbies'], $me['hobbies']);
+// echo '<pre>';
+// print_r($arraydiff);
+// echo '</pre>';
+?>
+
+
+<!-- more exercices -->
+<?php
+$web_development= ['frontend' => [],
+'backend' => []];
+$web_development['frontend']= array("xHtml", "css", "Ruby on rails", "flash", "js"); 
+$web_development['backend'] =array('Ruby on rails');
+unset($web_development['frontend'][3]);
+$web_development['frontend'][0] = 'Html';
+print_r($web_development);
+
+
+
+
 
 
 
