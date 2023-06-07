@@ -55,7 +55,42 @@ function acronym($variable) {
     echo $acronym;
     }
 
-acronym("In code we trust!");
+// acronym("In code we trust!");
+
+function replaceLetters($string) {
+    $replacement = 'æ';
+    $pattern = '/[ae]/i';
+    return preg_replace($pattern, $replacement, $string);
+}
+$strings = [
+    'caecotrophie',
+    'chaenichthys',
+    'microsphaera',
+    'sphaerotheca'
+];
+foreach ($strings as $string) {
+    $result = replaceLetters($string);
+    // echo $result . "\n";
+}
+
+function replaceAe($string) {
+    $replacement = 'ae';
+    $pattern = '/æ/i';
+    return preg_replace($pattern, $replacement, $string);
+}
+
+
+$strings = [
+    'cæcotrophie',
+    'chænichthys',
+    'microsphæra',
+    'sphærotheca'
+];
+
+foreach ($strings as $string) {
+    $result = replaceAe($string);
+    // echo $result . "\n";
+}
 
 
 ?>
