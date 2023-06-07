@@ -100,12 +100,22 @@ function feedback($message, $css_class) {
  echo "<div class=$css_class>$message</div>";
 
 }
-feedback("Incorrect email address", "error");
-feedback("Incorrect email address","warning");
-feedback("Incorrect email address","notice");
+// feedback("Incorrect email address", "error");
+// feedback("Incorrect email address","warning");
+// feedback("Incorrect email address","notice");
 
+function stringenerator($minLength, $maxLength) {
+    $characters = 'abcdefghijklmnopqrstuvwxyz';
+    $length = mt_rand($minLength, $maxLength);
+    $randomWord = '';
+    for ($i = 0; $i < $length; $i++) {
+        $randomWord .= $characters[mt_rand(0, strlen($characters) - 1)];
+    }
+    echo "$randomWord \n";
+}
 
-
+$word1 = stringenerator(1, 5);
+$word2 = stringenerator(7, 15);
 
 
 
@@ -114,7 +124,7 @@ feedback("Incorrect email address","notice");
 
 
 ?>
-
+   
 
 
 </body>
