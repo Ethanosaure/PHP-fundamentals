@@ -93,6 +93,26 @@ foreach ($strings as $string) {
 }
 
 
+function feedback($message, $css_class) {
+    $info = "-info";
+    $css_class .= $info;
+
+ echo "<div class=$css_class>$message</div>";
+
+}
+feedback("Incorrect email address", "error");
+feedback("Incorrect email address","warning");
+feedback("Incorrect email address","notice");
+
+
+
+
+
+
+
+
+
+
 ?>
 
 
