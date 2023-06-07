@@ -123,16 +123,16 @@ function Decapitalize($string){
     $result = strtolower($string);
     echo $result;
 }
-Decapitalize("STOP YELLING I CAN'T HEAR MYSELF THINKING!!");
+// Decapitalize("STOP YELLING I CAN'T HEAR MYSELF THINKING!!");
 
+function calculate_cone_volume($ray, $height){
 
-
-
-
-
-
+$volume = $ray * $ray * 3.14 * $height * (1/3);  
+echo "The volume of a cone which ray is $ray and height is $height =" . $volume . ' cm<sup>3</sup><br />';  
+}
+calculate_cone_volume(5, 4); 
 ?>
-   
+  
 
 
 </body>
