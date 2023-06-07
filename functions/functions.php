@@ -22,7 +22,7 @@ function capitalize($name) {
     echo ucfirst("$name<br>");
     echo date("d M y ");
 }
-capitalize('gaston');
+// capitalize('gaston');
 
 function sum($num1, $num2) {
     if (!is_numeric($num1 ) || !is_numeric($num2)){
@@ -33,9 +33,29 @@ function sum($num1, $num2) {
     echo $result;
     return $result;
 }
+// sum(8, 3);
 
-sum(8, 3);
+function acronym($variable) {
 
+    if (!$variable){
+        echo "error, no argument";
+        return null;
+    }
+
+    if (is_numeric($variable)){
+        echo "error : argument must be a string";
+        return null;
+    }
+    $words = explode(" ", $variable);
+    $acronym ="";
+
+    foreach($words as $word){
+        $acronym .= strtoupper($word[0]);
+    }
+    echo $acronym;
+    }
+
+acronym("In code we trust!");
 
 
 ?>
