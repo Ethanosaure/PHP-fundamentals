@@ -114,8 +114,16 @@ function stringenerator($minLength, $maxLength) {
     echo "$randomWord \n";
 }
 
-$word1 = stringenerator(1, 5);
-$word2 = stringenerator(7, 15);
+// $word1 = stringenerator(1, 5);
+// $word2 = stringenerator(7, 15);
+
+
+function Decapitalize($string){
+
+    $result = strtolower($string);
+    echo $result;
+}
+Decapitalize("STOP YELLING I CAN'T HEAR MYSELF THINKING!!");
 
 
 
