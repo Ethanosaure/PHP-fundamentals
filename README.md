@@ -2,7 +2,7 @@
 
 different PHP exercices containing:  
 -learning how to create and use variables  
--leanring how to use the localhost
+-learning how to use the localhost
 -learning how to use many functions  
 -learning how to create arrays  
 -creating an excuse generator  
